@@ -19,17 +19,18 @@ public class Factorial {
 			
 		}while(number<=0);
 	
-		factorial = Givefactorial(5);
+		factorial = Givefactorial(number);
+		System.out.println("The factorial of " + number + " is: " + factorial);
 		
 		input.close();
 	}
 	
 	
 	public static long Givefactorial(int n){
-		return 1;
-	}
-
-	public static long Givefactorial(double n){
-		return 1;
+		int factorial=1;
+		for(int i=1; i<=n; n++) {
+			factorial*=i;
+		}
+		return factorial;
 	}
 }
